@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Server Access Checker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Server Access Checker</h1>
+    <div class="container">
+        <label for="fileUpload"><b>Upload Total Servers File:</b></label>
+        <input type="file" id="fileUpload" accept=".txt">
+        <input type="text" id="filePath" readonly>
+
+        <label for="serverNames"><b>Enter Server Names (One per line):</b></label>
+        <textarea id="serverNames" rows="5"></textarea>
+
+        <label for="accessedServers"><b>Enter Already Accessed Servers (One per line):</b></label>
+        <textarea id="accessedServers" rows="5"></textarea>
+
+        <button id="generateOutput">Generate Output</button>
+        <div id="outputMessage"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
